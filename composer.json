@@ -1,0 +1,39 @@
+{
+    "name": "gpapakitsos/laravel-greek-company-info",
+    "description": "Greek company info via GSIS services",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "George Papakitsos",
+            "email": "papakitsos_george@yahoo.gr",
+            "homepage": "https://papakitsos.gr"
+        }
+    ],
+    "require": {
+        "php": ">=7.0",
+        "illuminate/support": ">=5.5"
+    },
+    "require-dev": {
+        "orchestra/testbench": ">=3.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "GPapakitsos\\GreekCompanyInfo\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "GPapakitsos\\GreekCompanyInfo\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "GPapakitsos\\GreekCompanyInfo\\GreekCompanyInfoServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
